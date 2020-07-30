@@ -494,6 +494,7 @@ class SortableSudokuGrid extends Component {
             {
                 toValue: height,
                 duration: containerHeight.animationDuration,
+                useNativeDriver: false
             }
         ).start(() => {
             this._animationInstace = null

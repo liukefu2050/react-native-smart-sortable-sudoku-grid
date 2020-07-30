@@ -96,6 +96,7 @@ export default class SortableCell extends Component {
             {
                 toValue: scaleValue,
                 duration: cellScale.animationDuration,
+                useNativeDriver: false
             }
         ).start(() => {
             this._scaleAnimationInstace = null
@@ -145,6 +146,7 @@ export default class SortableCell extends Component {
                     y,
                 },
                 duration: cellTranslation.animationDuration,
+                useNativeDriver: false
             }
         )
     }
