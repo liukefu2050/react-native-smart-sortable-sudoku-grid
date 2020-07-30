@@ -1,9 +1,3 @@
-/*
- * A smart sortable sudoku grid for react-native apps
- * https://github.com/react-native-component/react-native-smart-sortable-sudoku-grid/
- * Released under the MIT license
- * Copyright (c) 2016 react-native-component <moonsunfall@aliyun.com>
- */
 
 import React, {
     Component,
@@ -94,7 +88,7 @@ class SortableSudokuGrid extends Component {
         this._cells = []
     }
 
-    componentWillMount () {
+    UNSAFE_componentWillMount () {
 
         this._panResponder = PanResponder.create({
             onStartShouldSetPanResponder: (e, gestureState) => {
